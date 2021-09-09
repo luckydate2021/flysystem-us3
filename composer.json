@@ -1,0 +1,24 @@
+{
+    "name": "enoliu/flysystem-ucloud",
+    "description": "Flysystem adapter for the Ucloud US3 storage.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "enoliu",
+            "email": "595929049@qq.com"
+        }
+    ],
+    "require": {
+        "league/flysystem": "^1.0",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Enoliu\\Flysystem\\Us3\\": "src"
+        },
+        "files": [
+            "src/Supports/functions.php"
+        ]
+    }
+}
