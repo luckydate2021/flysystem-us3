@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Enoliu\\Flysystem\\Us3\\": "src"
+            "Luckydate2021\\Flysystem\\Us3\\": "src"
         },
         "files": [
         ]
