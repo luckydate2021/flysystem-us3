@@ -18,7 +18,6 @@
             "Enoliu\\Flysystem\\Us3\\": "src"
         },
         "files": [
-            "src/Supports/functions.php"
         ]
     }
 }
