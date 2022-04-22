@@ -75,7 +75,6 @@ class Us3Sdk
 
     public function put($key_name, $contents, $headers = [])
     {
-        $headers = [];
         $resp = $this->httpClient->request('PUT', $key_name, [
             'headers' => $headers,
             'body'    => $contents,
