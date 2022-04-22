@@ -5,6 +5,7 @@ namespace Luckydate2021\Flysystem\Us3\Provider;
 use GuzzleHttp\Client;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Handler\CurlHandler;
+use Hyperf\Guzzle\CoroutineHandler;
 
 class Us3SdkException extends \Exception
 {
@@ -67,7 +68,7 @@ class Us3Sdk
         $this->sec_key = $sec_key;
         $this->host = ($https ? 'https://' : 'http://') . $bucket . $suffix;
         $stack = new HandlerStack();
-        $stack->setHandler(new CurlHandler());
+        $stack->setHandler(new CoroutineHandler());
         $stack->push(static::auth($bucket, $pub_key, $sec_key));
         $this->httpClient = new Client(['base_uri' => $this->host, 'handler' => $stack, 'debug' => $debug]);
     }
