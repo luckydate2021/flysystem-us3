@@ -1,6 +1,13 @@
 # flysystem-us3
 Flysystem adapter for the Ucloud US3 storage.
 
+### 使用
+composer require luckdate2021/flysystem-us3
+
+如果提示找不到就还原composer的默认仓库再试。注意只限hyperf(^2.2)使用
+
+### 其他注意
+
 只适用于league/flysystem ^1.1版本。
 
 在Us3Sdk中使用了new CoroutineHandler()，只限hyperf(^2.2)使用。
