@@ -4,7 +4,7 @@ Flysystem adapter for the Ucloud US3 storage.
 ### 使用
 1. 拉取
 
-    composer require luckdate2021/flysystem-us3
+    composer require luckydate2021/flysystem-us3
 
     如果提示找不到就还原composer的默认仓库再试。注意只限hyperf(^2.2)使用
 
