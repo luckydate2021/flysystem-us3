@@ -63,10 +63,8 @@ public function index()
                 $bucket->writeStream($filePathUrl, $stream, ['mime' => 'image/png']); //主要这里的mine要根据文件来传，这里只是示例
                 if (is_resource($stream)) {
                     fclose($stream);
-                }else{
-                    return '注意:如果显示这句，检查key之类的是否正确，还是不知道就改一下拉下来的Us3Adapter.php，把writeStream返回的结果打印下，看ucloud的报错信息';
                 }
-
+               //'注意:如果发现无法上传，则检查key之类的是否正确，还是不知道就改一下拉下来的Us3Adapter.php，把writeStream返回的结果打印下，看ucloud的报错信息';
             } catch (\Exception $e) {
                 return '上传失败';
             }
