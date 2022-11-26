@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "league/flysystem": "^1.0",
+        "luckydate2021/flysystem": "^1.0",
         "ext-json": "*",
         "guzzlehttp/guzzle": "^7.3"
     },
