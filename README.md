@@ -6,7 +6,12 @@ Flysystem adapter for the Ucloud US3 storage.
 
     composer require luckydate2021/flysystem-us3
 
-    如果提示找不到就还原composer的默认仓库再试。注意只限hyperf(^2.2)使用
+    如果提示找不到就还原composer的默认仓库再试。注意只限hyperf(^2.2)使用.
+    
+    如果提示 league/flysystem 引用的版本问题，就先指定league/flysystem为^1.0再拉取
+
+    composer require "league/flysystem:^1.0"
+
 
 
 2. 按照 hyperf 的手册加入filesystem，和发布
