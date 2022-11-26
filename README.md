@@ -9,7 +9,7 @@ Flysystem adapter for the Ucloud US3 storage.
     如果提示找不到就还原composer的默认仓库再试。注意只限hyperf(^2.2)使用
 
 
-2. 按照 hyperf 的手册加入filesystem，和发版
+2. 按照 hyperf 的手册加入filesystem，和发布
 
     composer require hyperf/filesystem
 
