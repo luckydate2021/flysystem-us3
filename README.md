@@ -35,6 +35,22 @@ Flysystem adapter for the Ucloud US3 storage.
    'https' => false,
    ]
 
+4. 由于第三方flysystem返回writeStream的结果是布尔值，但ucloud错误是json，导致错也是true；
+   可以创建一个目录例如patch，然后把Filesystem.php复制到目录，删除强制转换的(bool)，直接返回ucloud结果。
+   然后在composer.json，加入这个文件自动加载。
+   
+   备注：ucloud上传成功返回的文件名称，错误的话返回是个json，里面有错误。
+```
+"autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "patch/Filesystem.php"
+        ]
+    },
+```
+
 ### 示例
 ```
 use Hyperf\Filesystem\FilesystemFactory;
